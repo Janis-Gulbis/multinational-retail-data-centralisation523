@@ -4,7 +4,7 @@ from sqlalchemy import create_engine, text
 
 class DatabaseConnector:
     def read_source_db_creds(self, filepath='db_creds.yaml'):
-        #Reads credentials for the source database
+        #Reads credentials for the source database.
         with open(filepath, 'r') as file:
             creds = yaml.safe_load(file)
         return creds

@@ -99,7 +99,7 @@ class DataCleaning:
         return self.drop_na(products_df, subset=["weight"]).astype({'weight': float})
     
     def clean_orders_data(self, orders_data_df):
-        #Cleans the orders data DataFrame
+        #Cleans the orders data DataFrame.
         orders_data_df = self.replace_nulls(orders_data_df)
         
         # Drops unnecessary columns

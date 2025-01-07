@@ -6,7 +6,7 @@ from data_cleaning import DataCleaning
 
 def extract_clean_upload_data(data_extractor, data_cleaning, db_connector, extraction_method, clean_method, table_name, *args, **kwargs):
     
-    # A generic function to extract, clean, and upload data to the database.
+    # A generic function to extract, clean, and upload data to the database
     try:
         # Extracts data using the provided extraction method
         extracted_data = getattr(data_extractor, extraction_method)(*args, **kwargs)

@@ -9,7 +9,7 @@ from database_utils import DatabaseConnector
 class DataExtractor:
 
     def read_rds_table(self, db_connector, legacy_users):
-        #Reads the legacy_users table from an RDS database
+        #Reads the legacy_users table from an RDS database.
         engine = db_connector.init_db_engine()
         query = f"SELECT * FROM {legacy_users}"
         return pd.read_sql(query, con=engine)
