@@ -1,23 +1,14 @@
 <!-- README file in MD for the Multination Retail Data Centre repository-->
 <a name="readme-top"></a>
-<!--
 
-
-<!-- PROJECT LOGO -->
-<p align="center">
-  <br>
-  Extract, process, and unify data from multiple sources into a single PostgreSQL database.
-</p>
-
+# Extracting, Integrating, and Transforming  Data from Diverse Sources into a Unified PostgreSQL Database.
 
 <!-- SHIELDS FOR REPO -->
-<p align="center">
+<p align="left">
     <a>
         <img src="https://img.shields.io/badge/language-Python-red"
             alt="Language"></a>
-    <a>
-        <img src="https://img.shields.io/badge/license-Apache 2.0-red"
-            alt="License"></a>
+   
 </p>
 
 <!-- ABOUT THE PROJECT -->
@@ -31,6 +22,9 @@ Key technologies: PostgreSQL, AWS S3, Boto3, REST API, CSV, Python (Pandas).
 - `Key platforms and technologies`: PostgreSQL, AWS (S3 Buckets, Amazon RDS), REST API
 - `Files parsed`: Structured (JSON, CSV), Unstructured (PDF)
 - `Languages`: Python
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ### Project Utilities
  - Data Extraction: The `data_extraction.py` file contains methods for loading data from various sources into Pandas DataFrames.
