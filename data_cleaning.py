@@ -44,10 +44,6 @@ class DataCleaning:
         # Drops 'lat' column
         store_data_df = store_data_df.drop(columns=['lat'], errors='ignore')
         
-        # Removes rows with 10-character codes across multiple columns
-        columns_to_check = ['address', 'longitude', 'locality', 'store_code', 'staff_numbers', 'opening_date', 'store_type', 'latitude', 'country_code', 'continent']
-        store_data_df = store_data_df[~store_data_df[columns_to_check].apply(lambda x: x.str.match(r'^[A-Za-z0-9]{10}$', na=False)).any(axis=1)]
-        
         # Converts 'opening_date' to datetime and drop rows with invalid dates
         store_data_df['opening_date'] = pd.to_datetime(store_data_df['opening_date'], errors='coerce')
         store_data_df = self.drop_na(store_data_df, subset=['opening_date'])
