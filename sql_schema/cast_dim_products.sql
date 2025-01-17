@@ -1,9 +1,6 @@
 --Remove £ sign from product_price column:
 ALTER TABLE dim_products
 
-UPDATE dim_products 
-SET product_price_in_gbp = REPLACE(product_price_in_gbp, '£', '');
-
 --Add weight_class column:
 ALTER TABLE dim_products 
 ADD COLUMN weight_class VARCHAR(255);
